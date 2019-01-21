@@ -1,5 +1,7 @@
 fdtaddr=0x8f000000
 loadaddr=0x81000000
+ethaddr=00:04:9f:00:00:01
+eth1addr=00:04:9f:00:00:02
 fdt_high=0xffffffffffffffff
 initrd_high=0xffffffffffffffff
 qspi_boot=sf probe 0:0;sf read $fdtaddr f00000 100000;sf read $loadaddr 1000000 1000000;bootm $loadaddr - $fdtaddr
